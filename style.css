@@ -1,0 +1,150 @@
+html, body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+/* Navbar content styles */
+nav{
+    
+    display: flex;
+    padding: 8px 60px;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    
+}
+nav div{
+    
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+}
+nav a{
+    color: inherit;
+}
+nav button{
+    border-radius: 5px;
+    padding: 8px 16px  ;
+    color: inherit;
+}
+nav button:hover{
+    cursor: pointer;
+}
+nav button:nth-child(1){
+    background-color: transparent;
+   
+    border: 1px solid white;
+}
+nav button:nth-child(2){
+    background-color: #4C5FD5;
+    border: none;
+}
+nav button:nth-child(2):hover{
+    color: black;
+    background-color: white;
+}
+/* Main content styles */
+/* Hero content styles */
+#hero{
+    background-color: #dadbf1;
+    padding: 0px 60px;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+}
+#hero h1{
+    margin: 0;
+    font-size: 3.5rem;
+    text-align: center;
+}
+#input-box{
+    border: 2px solid black;
+    padding: 4px 8px;
+    background-color: white;
+    border-radius: 5px;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#input-box input{
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+}
+
+/* Feature section styles */
+#features{
+    width: fit-content;
+    
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: 400px 400px;/*repeat(2, 1fr);  */
+    row-gap: 20px;
+    column-gap: 16px;
+
+}
+.feature-box{
+    display: flex;
+    border: 2px solid;
+    padding: 12px;
+    column-gap: 12px;
+    border-radius: 4px;
+}
+.feature-box div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    flex-basis: 80%;
+}
+.feature-box span{
+    
+    flex-basis: 20%;
+}
+
+.feature-box div h4,
+.feature-box div p{
+    margin: 0;
+}
+footer{
+    background-color: black;
+color: white;
+height: 45vh;
+padding: 20px 60px;
+display: flex;
+justify-content: center;
+
+
+}
+footer ul{
+    list-style-type: none;
+}
+footer a{
+color: inherit;
+}
+#footer-link-container{
+    display: flex;
+    column-gap: 80px;
+}
+footer > div:nth-child(2){
+    align-self: flex-end;
+}
+.footer-link-item:nth-child(4){
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+}
